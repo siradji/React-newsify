@@ -19,17 +19,14 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   topSection: {
-    height: '70vh',
+    height: '80vh',
     display: 'flex',
-    flexWrap: 'wrap',
+
     justifyContent: 'space-between',
-    marginBottom: '2.5em',
-    [theme.breakpoints.down('md')]: {
-      display: 'none'
-    }
+    marginBottom: '2.5em'
   },
   img: {
-    height: '70vh',
+    height: '80vh',
     Width: '100%'
   },
   imgContainer: {
