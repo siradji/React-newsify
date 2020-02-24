@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Importing Material UI
-import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -33,6 +33,9 @@ const useStyles = makeStyles({
   links: {
     textDecoration: 'none',
     color: '#fff'
+  },
+  cardContent: {
+    minHeight: 70
   }
 });
 const NewsItem = ({ news }) => {
@@ -52,7 +55,7 @@ const NewsItem = ({ news }) => {
           src={image}
           title={news.title}
         />
-        <CardContent className={classes.color}>
+        <CardContent className={classes.cardContent}>
           <Typnography variant='h6' component='p' gutterBottom>
             {news.title}
           </Typnography>
