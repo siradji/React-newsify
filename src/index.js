@@ -4,4 +4,5 @@ import App from './App';
 import './index.css';
 import '@babel/polyfill';
 
-ReactDom.render(<App />, document.getElementById('root'));
+const root = document.getElementById('root');
+ReactDom.render(<App />, root);

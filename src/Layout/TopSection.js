@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 const TopSection = () => {
   const classes = useStyles();
   const context = useContext(TopNewsContext);
-  const { news } = context;
+  const { news, loading } = context;
 
   let image1;
   let image2;
@@ -83,10 +83,9 @@ const TopSection = () => {
     url2 = media[10].url;
     image1 = img[0].url;
     image2 = img2[0].url;
-    console.log(media);
   }
 
-  return (
+  return !loading ? (
     <Hidden smDown={true}>
       <Container>
         {/* <Typography variant='h5' component='h5' className={classes.title}>
@@ -154,7 +153,7 @@ const TopSection = () => {
         </div>
       </Container>
     </Hidden>
-  );
+  ) : null;
 };
 
 const Container = Styled.div`
