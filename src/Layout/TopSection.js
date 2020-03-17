@@ -21,8 +21,7 @@ const useStyles = makeStyles((theme) => ({
   topSection: {
     height: '80vh',
     display: 'flex',
-
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly',
     marginBottom: '2.5em'
   },
   img: {
@@ -159,6 +158,7 @@ const TopSection = () => {
 const Container = Styled.div`
 max-width: 98%;
 margin:auto;
+overflow:hidden; 
 
 
 `;
